@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="html">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#fade").click(function(){
+                    $("#h").fadeToggle();
+                });
+                $("#slide").click(function(){
+                    $("#panel").slideToggle("slow");
+                });
+                
+            });    
+        </script>
+        <style>
+            #panel{
+                background-color:rgb(235, 193, 137) ;
+                width:50%;
+                padding: 10px;
+                margin:auto;
+                
+            }
+            #container{
+                background-color:rgb(235, 193, 137) ;
+                width:50%;
+                padding: 10px;
+                margin:auto;
+                margin-top:10%;
+            }
+            button{
+                margin-left:40%;
+                background-color:rgb(221, 213, 142);
+                outline:none;
+            }
+            h1{
+                text-align: center;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <div id="container">
+        <button id="fade" type="button">Fade in /Fade out</button>
+        <div id="h"><h1>hey!</h1></div>
+    </div>
+    <div id="container">
+        <button id="slide" type="button">Slideup/Slidedown</button>
+    </div>
+    <div id="panel"><h1>hey!</h1></div>
+    </body>
+
+</html>

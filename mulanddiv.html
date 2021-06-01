@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function mult(){
+                 let a=parseFloat(document.getElementById("num1").value);
+                 let b=parseFloat(document.getElementById("num2").value);
+                 let c=(a*b);
+                 document.getElementById("res").value=c;
+            }
+            function divide(){
+                a=parseFloat(document.getElementById("num1").value);
+                 b=parseFloat(document.getElementById("num2").value);
+                 let c=a/b;
+                 document.getElementById("res").value=c;
+                 
+            }
+            function allClear(){
+                document.getElementById("num1").value="";
+                document.getElementById("num2").value="";
+                document.getElementById("res").value="";
+
+            }
+        </script>
+        <style>
+            #container{
+                background-color:#D7ECD9 ;
+                width:30%;
+                margin:auto;
+                padding: 5%;
+                margin-top: 10%;
+                border-radius: 15px;
+                }
+            #number1,#number2{
+               
+                padding: 10px;
+                
+            }
+            #result{
+              padding:10px;
+              float:left;
+              
+
+            }
+            #mulb,#divb,#clear{
+
+                float: left;
+                padding: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="container">
+        <form>
+           
+            <div id="number1">
+            <label for="num1">Enter number 1 </label>
+            <input id="num1" type="text"></div>
+            <div id="number2"><label for="num2">Enter number 2</label>
+            <input id="num2" type="text"></div>
+            <div id="mulb"><button id="mul" onclick="mult()" type="button">MULTIPLY</button></div>
+            <div id="divb"><button id="div" onClick="divide()" type="button">DIVIDE</button></div>
+            <div id="clear"><button id="div" onClick="allClear()" type="button">CLEAR</button></div>
+            <div id="result">
+                <label for="result">Result</label>
+                <input id="res" type="text"></div>
+            
+        </form>
+        </div>
+    </body>
+</html>

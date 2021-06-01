@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            function hideandshow(){
+                var x=document.getElementById("pic");
+                if(x.style.display==="none"){
+                    x.style.display="block";
+
+                }
+                else{
+                    x.style.display="none";
+                }
+            }
+        </script>
+        <style>
+            #pic{
+                margin-left: 52%;
+                margin-top:10%;
+            }
+            
+            #hide{
+                background-color:rgb(255, 0, 119);
+                width:10%;
+                margin-left:50%;
+                border-radius: 10px;
+                outline:none;
+                margin-top:10%;
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="pic">
+        <img src="pic.jpg"></div>
+        <button type="button" id="hide" onclick="hideandshow()">Hide/Show</button>
+        
+
+    </body>
+</html>
